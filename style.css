@@ -51,11 +51,14 @@ body {
   display: grid;
   grid-template-columns: 20% 50% 30%;
   margin-bottom: 20px;
+  margin-top: 10px;
+
 }
 
 .name p{
   position: relative;
   left: 15%;
+  top: 10%;
   font-size: 13px;
   font-weight: 700;
   color: #48556a;
@@ -71,7 +74,7 @@ body {
   background-color: #ecf2f8;
   width: 40px;
   height: 40px;
-  border-radius: 50%;;
+  border-radius: 50%;
   border: none;
   position: relative;
   top: 25%;
@@ -83,12 +86,56 @@ body {
   width: 60%;
   position: relative;
   left: 50%;
-  top: 15%;
+  top: 20%;
+}
+
+.share{
+  width: 90%;
+  background-color: #48556a;
+  border-radius: 0 0 10px 10px;
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 1;
+  transform: translateY(-100%);
+  visibility: hidden;
+}
+
+.show-share{
+  visibility: visible;
+}
+
+.share p{
+  color:  #6d7f97;
+  letter-spacing: 3px;
+  font-weight: 500;
+  margin-left: 40%;
+}
+
+.icons{
+  margin: auto;
+  padding-left: 20px;
+}
+
+.icons a {
+  text-decoration: none;
+  padding: 5px;
+}
+
+.share button {
+  background-color: #ecf2f8;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: auto;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  justify-content: center;
 }
 
 .attribution a {
