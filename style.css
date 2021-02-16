@@ -50,9 +50,7 @@ body {
 .name{
   display: grid;
   grid-template-columns: 20% 50% 30%;
-  margin-bottom: 20px;
   margin-top: 10px;
-
 }
 
 .name p{
