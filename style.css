@@ -20,7 +20,7 @@ body {
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .image {
