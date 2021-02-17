@@ -2,17 +2,17 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: 'Manrope', sans-serif;
-    background-color: #ecf2f8;
+  background-color: #ecf2f8;
 }
 
-.container{
+.container {
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.card{
+.card {
   width: 90%;
   background-color: white;
   border-radius: 10px;
@@ -31,29 +31,29 @@ body {
   width: 100%;
 }
 
-.heading h1{
+.heading h1 {
   font-size: 18px;
   font-weight: 700;
-  color: 	#48556a;
+  color: #48556a;
   width: 80%;
   margin-left: 10%;
 }
 
-.text h2{
+.text h2 {
   font-size: 16px;
   font-weight: 500;
-  color: 	#6d7f97;
+  color: #6d7f97;
   width: 80%;
   margin-left: 10%;
 }
 
-.name{
+.name {
   display: grid;
   grid-template-columns: 20% 50% 30%;
   margin-top: 10px;
 }
 
-.name p{
+.name p {
   position: relative;
   left: 15%;
   top: 10%;
@@ -68,7 +68,7 @@ body {
   margin-top: 1em;
 }
 
-.name button{
+.name button {
   background-color: #ecf2f8;
   width: 40px;
   height: 40px;
@@ -79,7 +79,7 @@ body {
   left: 34%
 }
 
-.michelle-image{
+.michelle-image {
   border-radius: 50%;
   width: 60%;
   position: relative;
@@ -87,7 +87,7 @@ body {
   top: 20%;
 }
 
-.share{
+.share {
   width: 90%;
   background-color: #48556a;
   border-radius: 0 0 10px 10px;
@@ -100,18 +100,18 @@ body {
   visibility: hidden;
 }
 
-.show-share{
+.show-share {
   visibility: visible;
 }
 
-.share p{
-  color:  #6d7f97;
+.share p {
+  color: #6d7f97;
   letter-spacing: 3px;
   font-weight: 500;
   margin-left: 40%;
 }
 
-.icons{
+.icons {
   margin: auto;
   padding-left: 40px;
 }
@@ -138,4 +138,52 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    height: 95vh;
+    justify-content: center;
+  }
+  .card {
+    width: 85vw;
+    height: 25vh;
+    grid-template-columns: 40% 60%;
+  }
+  .image {
+    height: 100%;
+  }
+  .image img{
+    width: 120%;
+  }
+
+  .wrapper {
+    margin-top: 10px;
+  }
+
+  .heading h1{
+    font-size: 1.1rem;
+  }
+
+  .text h2{
+    font-size: 0.7rem;
+  }
+
+  .michelle-image {
+    width: 45%;
+    position: relative;
+    top: 30%;
+  }
+
+  .share{
+    width: 51vw;
+    margin-left: 34vw;
+    border-radius: 0 0 10px 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+
+
+
 }
