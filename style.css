@@ -211,7 +211,7 @@ body {
     width: 80vw;
     height: 35vh;
     grid-template-columns: 40% 60%;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
 
   .wrapper {
@@ -237,10 +237,16 @@ body {
     left: 50%;
   }
 
+  .name{
+    position: relative;
+    top: 30%;
+  }
+
   .name p {
     font-size: 1rem;
     position: relative;
     left: 5%;
+    margin-bottom: 10px;
   }
 
   .name button{
