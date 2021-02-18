@@ -1,7 +1,11 @@
+
+/* Mobile Viewport */
+
 body {
   margin: 0;
   box-sizing: border-box;
   font-family: 'Manrope', sans-serif;
+  ;
   background-color: #ecf2f8;
 }
 
@@ -21,6 +25,10 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   padding-bottom: 10px;
+  box-shadow: 0 79px 77px -73px rgba(0, 0, 0, 0.1);
+
+
+
 }
 
 .image {
@@ -141,20 +149,26 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
+
+/* Tablet viewport  */
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .container {
     height: 95vh;
     justify-content: center;
   }
+
   .card {
     width: 85vw;
     height: 25vh;
     grid-template-columns: 40% 60%;
   }
+
   .image {
     height: 100%;
   }
-  .image img{
+
+  .image img {
     width: 120%;
   }
 
@@ -162,11 +176,11 @@ body {
     margin-top: 10px;
   }
 
-  .heading h1{
+  .heading h1 {
     font-size: 1.1rem;
   }
 
-  .text h2{
+  .text h2 {
     font-size: 0.7rem;
   }
 
@@ -176,15 +190,117 @@ body {
     top: 30%;
   }
 
-  .share{
+  .share {
     width: 51vw;
     margin-left: 34vw;
     border-radius: 0 0 10px 0;
     padding-top: 5px;
     padding-bottom: 5px;
   }
+}
 
+/* Desktop and above viewport  */
 
+@media screen and (min-width: 1024px) {
+  .container {
+    height: 95vh;
+    justify-content: center;
+  }
 
+  .card {
+    width: 80vw;
+    height: 35vh;
+    grid-template-columns: 40% 60%;
+    padding-bottom: 30px;
+  }
+
+  .wrapper {
+    padding-top: 10px;
+  }
+
+  .image {
+    height: 110%;
+  }
+
+  .heading h1 {
+    font-size: 1.9rem;
+  }
+
+  .text h2{
+    padding-top: 5px;
+    font-size: 1rem;
+  }
+
+  .michelle-image{
+    width: 40%;
+    position: relative;
+    left: 50%;
+  }
+
+  .name p {
+    font-size: 1rem;
+    position: relative;
+    left: 5%;
+    margin-bottom: 10px;
+  }
+
+  .name button{
+    width: 45px;
+    height: 45px;
+    position: relative;
+    left: 40%;
+  }
+
+/* share button css  */
+  .share{
+    width: 18vw;
+    border-radius: 10px;
+    box-shadow: 0 79px 77px -73px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    position: relative;
+    left: 33%;
+    bottom: 14%;
+    grid-template-columns: 20% 79% 1%;
+  }
+
+  .share p{
+    margin-left: 30px;
+  }
+
+  .share button{
+    background-color: #48556a;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 200%;
+    left: 41%;
+    border: none;
+  }
+
+  .share::after {
+  position: absolute;
+  content: '';
+  border: 20px solid transparent;
+}
+
+.bottom.share::after {
+  /* DOWN TRIANGLE */
+  border-top-color: #48556a;
+  border-bottom: 0;
+  /* POSITION TAIL AT BOTTOM OF BOX */
+  bottom: -18px;
+  left: 50%;
+  margin-left: -20px;
+}
+
+  #close img{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(159deg) brightness(105%) contrast(105%);
+  }
+
+  .icons{
+    margin-left: 25px;
+    padding: 0 40px;
+    width: 80%;
+  }
 
 }
