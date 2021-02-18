@@ -237,11 +237,6 @@ body {
     left: 50%;
   }
 
-  .name{
-    position: relative;
-    top: 30%;
-  }
-
   .name p {
     font-size: 1rem;
     position: relative;
