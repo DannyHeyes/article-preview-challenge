@@ -149,7 +149,7 @@ body {
 
 /* Tablet viewport  */
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px)  {
   .container {
     height: 95vh;
     justify-content: center;
@@ -236,10 +236,11 @@ body {
 
 /* Desktop and above viewport  */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px){
 
 .container{
   height: 95vh;
+  width: 99vw;
   justify-content: center;
 }
 .card{
@@ -254,6 +255,7 @@ body {
 
 .wrapper{
   height: 100%;
+  padding: 0;
 }
 
 .heading h1{
@@ -265,9 +267,23 @@ body {
   font-size: 0.75rem;
 }
 
+.name {
+  padding-top: 5px;
+}
+
+.name p {
+  font-size: 0.6rem;
+}
+
+.name button {
+  height: 30px;
+  width: 30px;
+}
+
 /* share button css  */
   .share{
     width: 22vw;
+    height: 5%;
     border-radius: 10px;
     box-shadow: 0 79px 77px -73px rgba(0, 0, 0, 0.1);
     padding: 0;
@@ -275,19 +291,21 @@ body {
     left: 29.5%;
     bottom: 12%;
     grid-template-columns: 20% 79% 1%;
+
   }
 
   .share p{
     margin-left: 15px;
+    margin-top: 20px;
   }
 
   .share button{
     background-color: #48556a;
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    top: 165%;
-    left: 41%;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 7vh;
+    right: 12.5vw;
     border: none;
   }
 
@@ -312,11 +330,18 @@ body {
   }
 
   .icons{
-    margin-left: 30px;
-    padding: 0 20px;
+    margin-left: 40px;
+    padding: 20px;
     width: 80%;
   }
 
+}
+
+@media screen and (min-width: 1439px) {
+  .card{
+    width: 60vw;
+    height: 40vh;
+  }
 
 
 }
