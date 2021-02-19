@@ -26,9 +26,6 @@ body {
   grid-template-columns: 1fr;
   padding-bottom: 10px;
   box-shadow: 0 79px 77px -73px rgba(0, 0, 0, 0.1);
-
-
-
 }
 
 .image {
@@ -241,28 +238,55 @@ body {
 
 @media screen and (min-width: 1024px) {
 
+.container{
+  height: 95vh;
+  justify-content: center;
+}
+.card{
+  width: 70vw;
+  height: 30vh;
+  grid-template-columns: 45% 55%;
+}
+
+.image {
+  height: 110%;
+}
+
+.wrapper{
+  height: 100%;
+}
+
+.heading h1{
+  font-size: 1.1rem;
+  padding-top: 2%;
+}
+
+.text h2{
+  font-size: 0.75rem;
+}
+
 /* share button css  */
   .share{
-    width: 18vw;
+    width: 22vw;
     border-radius: 10px;
     box-shadow: 0 79px 77px -73px rgba(0, 0, 0, 0.1);
     padding: 0;
     position: relative;
-    left: 33%;
-    bottom: 14%;
+    left: 29.5%;
+    bottom: 12%;
     grid-template-columns: 20% 79% 1%;
   }
 
   .share p{
-    margin-left: 30px;
+    margin-left: 15px;
   }
 
   .share button{
     background-color: #48556a;
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
     position: absolute;
-    top: 200%;
+    top: 165%;
     left: 41%;
     border: none;
   }
@@ -288,9 +312,11 @@ body {
   }
 
   .icons{
-    margin-left: 25px;
-    padding: 0 40px;
+    margin-left: 30px;
+    padding: 0 20px;
     width: 80%;
   }
+
+
 
 }
