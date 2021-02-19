@@ -1,6 +1,4 @@
-
 /* Mobile Viewport */
-
 body {
   margin: 0;
   box-sizing: border-box;
@@ -146,10 +144,8 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
-
 /* Tablet viewport  */
-
-@media screen and (min-width: 768px)  {
+@media screen and (min-width: 768px) {
   .container {
     height: 95vh;
     justify-content: center;
@@ -161,7 +157,7 @@ body {
     grid-template-columns: 45% 55%;
   }
 
-  .wrapper{
+  .wrapper {
     height: 100%;
     padding-top: 5%;
   }
@@ -195,7 +191,7 @@ body {
     height: 70%;
   }
 
-  #open img{
+  #open img {
     width: 70%;
   }
 
@@ -235,53 +231,52 @@ body {
 }
 
 /* Desktop and above viewport  */
+@media screen and (min-width: 1024px) {
+  .container {
+    height: 95vh;
+    width: 99vw;
+    justify-content: center;
+  }
 
-@media screen and (min-width: 1024px){
+  .card {
+    width: 70vw;
+    height: 30vh;
+    grid-template-columns: 45% 55%;
+  }
 
-.container{
-  height: 95vh;
-  width: 99vw;
-  justify-content: center;
-}
-.card{
-  width: 70vw;
-  height: 30vh;
-  grid-template-columns: 45% 55%;
-}
+  .image {
+    height: 110%;
+  }
 
-.image {
-  height: 110%;
-}
+  .wrapper {
+    height: 100%;
+    padding: 0;
+  }
 
-.wrapper{
-  height: 100%;
-  padding: 0;
-}
+  .heading h1 {
+    font-size: 1.1rem;
+    padding-top: 2%;
+  }
 
-.heading h1{
-  font-size: 1.1rem;
-  padding-top: 2%;
-}
+  .text h2 {
+    font-size: 0.75rem;
+  }
 
-.text h2{
-  font-size: 0.75rem;
-}
+  .name {
+    padding-top: 5px;
+  }
 
-.name {
-  padding-top: 5px;
-}
+  .name p {
+    font-size: 0.6rem;
+  }
 
-.name p {
-  font-size: 0.6rem;
-}
+  .name button {
+    height: 30px;
+    width: 30px;
+  }
 
-.name button {
-  height: 30px;
-  width: 30px;
-}
-
-/* share button css  */
-  .share{
+  /* share button css  */
+  .share {
     width: 22vw;
     height: 5%;
     border-radius: 10px;
@@ -291,15 +286,14 @@ body {
     left: 29.5%;
     bottom: 12%;
     grid-template-columns: 20% 79% 1%;
-
   }
 
-  .share p{
+  .share p {
     margin-left: 15px;
     margin-top: 20px;
   }
 
-  .share button{
+  .share button {
     background-color: #48556a;
     width: 30px;
     height: 30px;
@@ -310,38 +304,78 @@ body {
   }
 
   .share::after {
-  position: absolute;
-  content: '';
-  border: 20px solid transparent;
-}
+    position: absolute;
+    content: '';
+    border: 20px solid transparent;
+  }
 
-.bottom.share::after {
-  /* DOWN TRIANGLE */
-  border-top-color: #48556a;
-  border-bottom: 0;
-  /* POSITION TAIL AT BOTTOM OF BOX */
-  bottom: -18px;
-  left: 50%;
-  margin-left: -20px;
-}
+  .bottom.share::after {
+    /* DOWN TRIANGLE */
+    border-top-color: #48556a;
+    border-bottom: 0;
+    /* POSITION TAIL AT BOTTOM OF BOX */
+    bottom: -18px;
+    left: 50%;
+    margin-left: -20px;
+  }
 
-  #close img{
+  #close img {
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(159deg) brightness(105%) contrast(105%);
   }
 
-  .icons{
+  .icons {
     margin-left: 40px;
     padding: 20px;
     width: 80%;
   }
-
 }
 
 @media screen and (min-width: 1439px) {
-  .card{
+  .card {
     width: 60vw;
-    height: 40vh;
+    height: 30vh;
   }
 
+  .heading h1 {
+    font-size: 1.5rem;
+  }
 
+  .text h2 {
+    font-size: 1rem;
+  }
+
+  .michelle-image {
+    top: 10%;
+  }
+
+  .name p {
+    font-size: 0.8rem;
+  }
+
+  .name button{
+    top: 35%;
+  }
+
+  .share {
+    left: 24.5%;
+    width: 15%;
+  }
+
+  .share button {
+    top: 7.2vh;
+    right: 8.1vw;
+  }
+
+  .share p{
+  margin-left: 25px;
+  padding-top: 8px;
+  }
+
+  .icons{
+    padding-top: 28px;
+  }
+
+  .icons a{
+    padding: 8px;
+  }
 }
