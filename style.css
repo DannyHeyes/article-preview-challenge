@@ -159,97 +159,87 @@ body {
   }
 
   .card {
-    width: 85vw;
+    width: 70vw;
     height: 25vh;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 45% 55%;
   }
 
-  .image {
+  .wrapper{
     height: 100%;
-  }
-
-  .image img {
-    width: 120%;
-  }
-
-  .wrapper {
-    margin-top: 10px;
-  }
-
-  .heading h1 {
-    font-size: 1.1rem;
-  }
-
-  .text h2 {
-    font-size: 0.7rem;
-  }
-
-  .michelle-image {
-    width: 45%;
-    position: relative;
-    top: 30%;
-  }
-
-  .share {
-    width: 51vw;
-    margin-left: 34vw;
-    border-radius: 0 0 10px 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-}
-
-/* Desktop and above viewport  */
-
-@media screen and (min-width: 1024px) {
-  .container {
-    height: 95vh;
-    justify-content: center;
-  }
-
-  .card {
-    width: 80vw;
-    height: 35vh;
-    grid-template-columns: 40% 60%;
-    padding-bottom: 0;
-  }
-
-  .wrapper {
-    padding-top: 10px;
+    padding-top: 5%;
   }
 
   .image {
     height: 110%;
   }
 
+  .image img {
+    height: 100%;
+  }
+
   .heading h1 {
-    font-size: 1.9rem;
+    font-size: 0.8rem;
   }
 
-  .text h2{
-    padding-top: 5px;
-    font-size: 1rem;
+  .text h2 {
+    font-size: 0.6rem;
   }
 
-  .michelle-image{
-    width: 40%;
-    position: relative;
-    left: 50%;
+  .michelle-image {
+    width: 50%;
   }
 
   .name p {
-    font-size: 1rem;
-    position: relative;
-    left: 5%;
-    margin-bottom: 10px;
+    font-size: 0.5rem;
   }
 
-  .name button{
-    width: 45px;
-    height: 45px;
-    position: relative;
-    left: 40%;
+  .name button {
+    width: 30%;
+    height: 70%;
   }
+
+  #open img{
+    width: 70%;
+  }
+
+  .share {
+    width: 38.5vw;
+    border-radius: 0 0 10px 0;
+    position: relative;
+    left: 15.7%;
+    height: 4%;
+  }
+
+  .share p {
+    position: relative;
+    bottom: 20%;
+  }
+
+  .icons {
+    position: relative;
+    bottom: 20%;
+  }
+
+  .icons a {
+    padding: 5px;
+  }
+
+  .share button {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    bottom: 22%;
+    right: 1%;
+  }
+
+  #close img {
+    width: 80%;
+  }
+}
+
+/* Desktop and above viewport  */
+
+@media screen and (min-width: 1024px) {
 
 /* share button css  */
   .share{
